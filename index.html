@@ -15,6 +15,7 @@
 
 		  var renderer = new THREE.WebGLRenderer();
 		  renderer.setSize(window.innerWidth, window.innerHeight);
+		  renderer.setClearColor(0xfffafa);
 		  document.body.appendChild(renderer.domElement);
 		
 		  var geometry = new THREE.CubeGeometry(1,1,1);
@@ -23,6 +24,8 @@
 		  mesh.rotation.x = 15 / 180 * Math.PI;
 		  mesh.rotation.y = 30 / 180 * Math.PI;
 		  mesh.rotation.z = 15 / 180 * Math.PI;
+
+		  
 
 		  scene.add(mesh);
 
